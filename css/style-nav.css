@@ -3,10 +3,11 @@
 :root{
     --grey: #f4f6f8;
     --yellow: #f6e05e;
+    box-sizing: border-box;
 }
 
 *{
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 body{
@@ -19,16 +20,10 @@ body{
     font-weight: 400;
 }
 
-.container{
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-}
 
 a{
     text-decoration: none;
     color: #000;
-    transition: all 0.3s ease-in-out;
 }
 
 a:hover{
@@ -48,19 +43,21 @@ a:hover{
 #navigation .container{
     display: flex;
     justify-content: space-between;
+    padding: 0 10px;
 }
 
 #navigation ul{
     margin:0;
-    width: 80%;
     display: flex;
-    justify-items: flex-end;
+    flex-direction: column;
+    align-content: flex-end;
     padding-left: 0;
 }
 
 #navigation ul li{
     display: block;
     align-items: flex-end;
+    width: 100px;
 }
 
 .active-link{
@@ -70,11 +67,16 @@ a:hover{
 #navigation a{
     font-weight: 200;
     text-align: center;
-    padding: 7px 12px;
+    padding: 10px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#navigation a:hover{
+    font-weight: 800;
 }
 
 #navigation .logo{
-    width: 20%;
+    width: 200px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -83,4 +85,41 @@ a:hover{
 #navigation .logo a{
     font-size: 18px;
     font-weight: 800;
+    text-align: left;
+}
+
+/* Au delà de 576px le style ci-dessous s'applique : Bien pour le mobile first*/
+@media only screen and (min-width:576px) { 
+	#navigation ul{
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    #navigation ul li{
+       width: auto;
+    }
+
+    #navigation .menu a{
+        margin-left: 15px;
+        text-align: right;
+    }
+
+    .container{
+        max-width: 800px;
+        margin: auto;
+        padding: 0;
+    }
+}
+
+/* Au delà de 992px le style ci-dessous s'applique */
+@media only screen and (min-width:992px) {
+    .container{
+        max-width: 1000px;
+    }
+
+    #navigation ul li{
+        width: 100px;
+        margin-left: 20px;
+     }
+
 }
