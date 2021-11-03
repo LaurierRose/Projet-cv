@@ -15,10 +15,11 @@ footer {
 .footer-content h5 {
     padding-top: 1em;;
     margin: 0px;
+    font-size: 14px;
 }
 
 .footer-content p {
-    font-size: 6.5px;
+    font-size: 10px;
     margin-bottom: -4px;
 }
 
@@ -39,12 +40,12 @@ footer {
 }
 
 .social-media a i {
-    font-size: 0.3rem;
+    font-size: 12px;
 }
 
 .footer_bottom {
     text-align: center;
-    font-size: 4px;
+    font-size: 8px;
 }
 
 .footer_bottom p {

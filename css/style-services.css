@@ -1,0 +1,136 @@
+h3{
+    font-size: 22px;
+}
+
+.plain-width{
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.content-container{
+    margin: 25px;
+}
+
+.center-text{
+    text-align: center;
+}
+
+#bio{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#bio article{
+    width: 100%;
+} 
+
+#bio aside{
+    width: 60%;
+    margin: 5% auto;
+}
+
+#bio .square-round{
+    width: 100%;
+    border-radius: 17px;
+}
+
+#bio table {
+    border-collapse: collapse;
+  }
+
+#bio td{
+    padding: 3px 0;
+}
+
+#bio table td:last-child{
+    font-weight: 600;
+}
+
+#bio table td:first-child{
+    padding-right: 10px;
+}
+
+.flex-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.yellow-stroke{
+    height: 45px;
+    background: url("../images/jaune.svg") no-repeat center bottom;
+    background-size: 90px;
+    margin-bottom: 15px;
+}
+
+#pictogram{
+    margin-top: 25px;
+}
+
+.yellow-stroke+p{
+    padding: 0 15%;
+}
+
+#services figure{
+    text-align: center;
+    width: 40%;
+    margin: 15px 0;
+}
+
+#services figure img{
+    width: 50%;
+}
+
+
+#services figcaption{
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* Au delà de 576px le style ci-dessous s'applique : Bien pour le mobile first*/
+@media only screen and (min-width:576px) { 
+    .content-container{
+        max-width: 500px;
+        margin: auto;
+    }
+
+    #bio{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    #bio article, #bio aside{
+        width: 60%;
+    }
+    
+    #bio aside{
+        width: 35%;
+    }
+
+    #services figure{
+        text-align: center;
+        width: 20%;
+        margin: 0;
+    }
+
+    #bio table td:first-child{
+        padding-right: 20px;
+    }
+
+}
+
+/* Au delà de 992px le style ci-dessous s'applique */
+@media only screen and (min-width:992px) {
+
+    .content-container{
+        max-width: 900px;
+        margin: auto;
+    }
+     
+
+}

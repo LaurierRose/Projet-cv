@@ -1,0 +1,50 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+/*  */
+
+header{
+    background-color: #f4f6f8;
+}
+
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.headerGraphicPic{
+    width: 45%;
+    
+
+}
+
+.headerGraphicPic img{
+    width: 100%;
+}
+
+.rightContent{
+    width: 45%;
+    padding-top: 50px;
+}
+
+.yellowStroke{
+    
+    align-self: flex-end;
+}
+
+.headerButton{
+        background-color:#dbbd25;
+        border-radius:24px;
+        display:inline-block;
+        cursor:pointer;
+        color:#000000;
+        font-family:Arial;
+        font-size:15px;
+        padding:13px 33px;
+        text-decoration:none;
+}
+
+.waveBg{
+    height: 150px;
+    width: 100%;
+}
