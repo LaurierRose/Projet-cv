@@ -1,7 +1,11 @@
+/* ***************Wave background image style **************** */
+
 .waveBg{
     height: 50px;
     width: 100%;
 }
+
+/* ******************** Global content style ********************* */
 
 h3{
     font-size: 22px;
@@ -19,6 +23,23 @@ h3{
 .center-text{
     text-align: center;
 }
+
+.yellow-stroke{
+    height: 45px;
+    background: url("../images/jaune.svg") no-repeat center bottom;
+    background-size: 90px;
+    margin-bottom: 15px;
+}
+
+.flex-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+
+/* ********************* Services content style ********************** */
 
 #bio{
     display: flex;
@@ -56,20 +77,6 @@ h3{
     padding-right: 10px;
 }
 
-.flex-around{
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    flex-wrap: wrap;
-}
-
-.yellow-stroke{
-    height: 45px;
-    background: url("../images/jaune.svg") no-repeat center bottom;
-    background-size: 90px;
-    margin-bottom: 15px;
-}
-
 #pictogram{
     margin-top: 25px;
 }
@@ -95,6 +102,17 @@ h3{
     font-weight: 600;
     margin-top: 10px;
 }
+
+
+
+/* ********************* Experience content style ********************** */
+
+
+
+
+
+/* ********************* Media queries content style ********************** */
+
 
 /* Au delà de 576px le style ci-dessous s'applique : Bien pour le mobile first*/
 @media only screen and (min-width:576px) { 
@@ -156,3 +174,5 @@ h3{
      
 
 }
+
+
