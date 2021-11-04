@@ -55,8 +55,22 @@ a{
 #navigation ul li{
     display: block;
     align-items: flex-end;
-    width: 100px;
-    height: 25px;
+    width: 100%;
+    height: 8%;
+    padding-top: 10px;
+}
+
+#navigation .menu{
+    position: fixed;
+    right: 0;
+    top: 0;
+    font-size: 35px;
+    height: 100vh;
+    width:100%;
+    background-color: var(--yellow);
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    transform: translateX(110%);
 }
 
 #navigation .menu .active-link{
@@ -71,7 +85,7 @@ a{
     font-weight: 200;
     text-align: center;
     padding: 5px 0;
-    transition: all 0.3s ease-in-out;
+    transition: font-weight 0.3s ease-in-out;
     margin-left: 0;
 }
 
@@ -81,7 +95,7 @@ a{
 }
 
 #navigation .logo{
-    width: 200px;
+    width: 80%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -97,9 +111,39 @@ a{
     border-bottom: none;
 }
 
-#menu-toggle {
-    display: block;
+.menu-toggle {
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
 }
+
+#navigation label{
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+#toggle{
+    display: none;
+    width: 30px;
+    height: 30px; 
+}
+
+#navigation .close{
+    opacity: 0;
+    transition: all 0.2s ease-in;
+    transition-delay: 150ms;
+}
+
+#toggle:checked + .menu {
+    transform: translateX(0);
+}
+
+#toggle:checked ~ .close {
+    opacity: 1;
+}
+
 
 
 /* Au delà de 576px le style ci-dessous s'applique : Bien pour le mobile first*/
@@ -111,6 +155,7 @@ a{
 
     #navigation ul li{
        width: auto;
+       height: 25px;
     }
 
     #navigation .menu a{
@@ -128,8 +173,27 @@ a{
         border-bottom: solid 3px;
     }
 
-    #menu-toggle {
+    #navigation .menu-toggle {
         display: none;
+    }
+
+    #navigation .menu{
+        position: static;
+        font-size: 16px;
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+        background-color: var(--grey);
+        height: fit-content;
+        transform: translateX(0);
+    }
+
+    #navigation label{
+        display: none;
+    }
+
+    #navigation .logo{
+        width: 20%;
     }
 
 }
@@ -137,15 +201,13 @@ a{
 /* Au delà de 992px le style ci-dessous s'applique */
 @media only screen and (min-width:992px) {
     .container{
-        max-width: 1000px;
+        max-width: 900px;
     }
 
     #navigation ul li{
         width: auto;
         height: auto;
      }
-
-     
-     
+   
 
 }

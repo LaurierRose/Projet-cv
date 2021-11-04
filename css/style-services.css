@@ -1,3 +1,8 @@
+.waveBg{
+    height: 50px;
+    width: 100%;
+}
+
 h3{
     font-size: 22px;
 }
@@ -25,8 +30,8 @@ h3{
 } 
 
 #bio aside{
-    width: 60%;
-    margin: 5% auto;
+    width: 180px;
+    margin: 0 auto;
 }
 
 #bio .square-round{
@@ -36,6 +41,7 @@ h3{
 
 #bio table {
     border-collapse: collapse;
+    width: 100%;
   }
 
 #bio td{
@@ -79,7 +85,7 @@ h3{
 }
 
 #services figure img{
-    width: 50%;
+    max-width: 45%;
 }
 
 
@@ -94,6 +100,28 @@ h3{
 @media only screen and (min-width:576px) { 
     .content-container{
         max-width: 500px;
+        margin: auto;
+    }
+
+    #bio table td:first-child{
+        padding-right: 20px;
+    }
+
+    #bio table{
+        width: auto;
+    }
+
+    .waveBg{
+        height: 100px;
+    }
+
+}
+
+/* Au delà de 992px le style ci-dessous s'applique */
+@media only screen and (min-width:992px) {
+
+    .content-container{
+        max-width: 800px;
         margin: auto;
     }
 
@@ -118,18 +146,12 @@ h3{
         margin: 0;
     }
 
-    #bio table td:first-child{
-        padding-right: 20px;
+    .waveBg{
+        height: 150px;
     }
 
-}
-
-/* Au delà de 992px le style ci-dessous s'applique */
-@media only screen and (min-width:992px) {
-
-    .content-container{
-        max-width: 900px;
-        margin: auto;
+    #bio aside{
+        margin: 30px auto;
     }
      
 
