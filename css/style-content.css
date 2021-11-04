@@ -8,7 +8,7 @@
 /* ******************** Global content style ********************* */
 
 h3{
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .plain-width{
@@ -104,11 +104,52 @@ h3{
 }
 
 
-
 /* ********************* Experience content style ********************** */
 
+#experience .content-container{
+    margin-top: 20px;
+}
 
+#experience .card{
+    width: 100%;
+    border: 2px solid var(--grey);
+    border-radius: 17px;
+    margin: 4%;
+    transition: all 0.5s ease-in-out;
+}
 
+#experience .card:hover{
+    box-shadow: 0 5px 12px -5px rgba(0, 0, 0, 0.3) ;
+    transform: translateX(2px);
+    transform: translateY(2px);
+    border-color: var(--yellow);
+}
+
+#experience .card:hover .top-band{
+    background-color: var(--yellow);
+}
+
+#experience .top-band{
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--grey);
+    border-radius: 15px 15px 0 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#experience .top-band small{
+    color: #666;
+}
+
+#experience .top-band img{
+    width: 50px;
+    align-self: flex-end;
+}
+
+#experience .card p{
+    padding: 0 15px;
+}
 
 
 /* ********************* Media queries content style ********************** */
@@ -132,6 +173,11 @@ h3{
     .waveBg{
         height: 100px;
     }
+
+    #experience .card{
+        margin: 1%;
+    }
+
 
 }
 
@@ -170,6 +216,11 @@ h3{
 
     #bio aside{
         margin: 30px auto;
+    }
+
+    #experience .card{
+        width: 46%;
+        margin: 2%;
     }
      
 

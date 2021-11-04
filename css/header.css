@@ -1,45 +1,80 @@
-body{
-    margin: 0px;
-    padding: 0px;
+*{
+    box-sizing: border-box;
 }
+
 /*  */
-
 header{
-    background-color: var(--grey);
-}
 
+    background-color: #f4f6f8;
+}
 .headerContainer{
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    
 }
 .headerGraphicPic{
-    width: 45%;
+    width: 49%;
     
-
+    
 }
-
 .headerGraphicPic img{
     width: 100%;
+    padding: 20px;
 }
 
 .rightContent{
-    width: 45%;
-    padding-top: 50px;
+    width: 47%;
+padding-top: 50px;
+
+}
+.headerHello{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 200;
+}
+header h1{
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 5px;
+}
+.rightContent h2{
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .yellowStroke{
-    
-    align-self: flex-end;
+    height: 70px;
+    background: url("/images/jaune.svg") no-repeat right bottom;
+    background-size: 110px;
+    margin-bottom: 15px;
+    display: block;
+    width: fit-content;
+    padding-right: 20px;
+}
+
+.headerIcons{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.headerIcons i{
+    padding-left: 10px;
+}
+.headerIcons a{
+    color: rgb(0, 0, 0);
 }
 
 .headerButton{
-        background-color:var(--yellow);
+        background-color:#F6e05e;
         border-radius:24px;
         display:inline-block;
         cursor:pointer;
         color:#000000;
-        font-family:Arial;
         font-size:15px;
         padding:13px 33px;
         text-decoration:none;
+        border: none;
+        box-shadow: 1px 1px 5px rgb(187, 187, 187);
 }
