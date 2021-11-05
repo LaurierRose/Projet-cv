@@ -76,17 +76,29 @@ header h1{
 }
 
 .headerButton{
-        background-color:#F6e05e;
-        border-radius:24px;
-        display:inline-block;
-        cursor:pointer;
-        color:#000000;
-        font-size:15px;
-        padding:13px 33px;
-        text-decoration:none;
-        border: none;
-        box-shadow: 1px 1px 5px rgb(187, 187, 187);
+    background-color:#F6e05e;
+    border-radius:24px;
+    display:inline-block;
+    cursor:pointer;
+    color:#000000;
+    font-size:15px;
+    padding:13px 33px;
+    text-decoration:none;
+    border: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
 }
+
+.headerButton:hover{
+    background-color: #000000;
+    color: var(--yellow);
+    animation: pop 0.3s linear 1;
+}
+
+@keyframes pop{
+    50%  {transform: scale(1.2);}
+  }
+
 /* Au delà de 992px le style ci-dessous s'applique */
 @media only screen and (max-width:992px) {
     
