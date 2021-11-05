@@ -1,13 +1,23 @@
 .headerButton:hover{
+    background-color: #000000;
+    color: var(--yellow);
+    animation: pop 0.3s linear 1;
+}
+
+i.fab:hover {
     animation: pop 0.3s linear 1;
 }
 
 /* ************************** Definition of the animations **************************** */
 
 @keyframes push{
-    50%  {transform: scale(0.8);}
+    50%  {
+        transform: scale(0.8);
+    }
   }
 
 @keyframes pop{
-    50%  {transform: scale(1.2);}
+    50%  {
+        transform: scale(1.2);
+    }
   }

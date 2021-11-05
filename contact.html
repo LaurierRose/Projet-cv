@@ -15,6 +15,7 @@
 		<link rel="stylesheet" href="css/header.css">
 		<link rel="stylesheet" href="css/style-footer.css">
 		<link rel="stylesheet" href="css/style-content.css">
+		<link rel="stylesheet" href="/css/contact.css">
 		<link rel="stylesheet" href="css/animation.css">
 
 	</head>
@@ -32,10 +33,10 @@
 				<label class="menu-toggle open" for="toggle">☰</label>
 				<input type="checkbox" id="toggle">
 				<ul class="menu" id="#wrap">
-					<li><a class="active-link" href="index.html">Services</a></li>
+					<li><a href="index.html">Services</a></li>
 					<li><a href="experience.html">Experience</a></li>
 					<li><a href="testimonials.html">Testimonials</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a class="active-link" href="contact.html">Contact</a></li>
 				</ul>
 				<label class="menu-toggle close" for="toggle">x</label>
 				
@@ -81,11 +82,35 @@
 
 		<!-- MAIN SECTION -->
 
-		<main id="services" class="plain-width">
-
-		
-
-			
+		<main>
+			<div class="contactTitleStroke">
+				<h1>Contact Me <img src="/images/jaune.svg" alt="Yellow Stroke"></h1>
+			</div>
+			<div class="contactContainer">
+				<form class="contactForm">
+					<div>
+						<label for="Nom">Name</label><br>
+						<input class="formEntries" type="text" name="Nom">
+					</div>
+					<div>
+						<label for="email">Email</label><br>
+						<input class="formEntries" type="email" name="email">
+					</div>
+					<div>
+						<label for="commentaire">Message</label><br>
+						<textarea class="formEntries" name="" id="" cols="30" rows="5" style="resize: none;"></textarea> 
+					</div>
+					<button class="contactSendButton">Send</button>
+				</form>
+	
+				<div class="contactRightContent">
+					<h4>Let's talk how i can help you!</h4>
+					<p>If you like my work and want to avail my services then drop me a message using the contact form. <br><br> Or get in touch using my email, skype or my contact number. <br><br> See you!</p>
+					<p class="contactId">Email: <span>walter@company.com</span></p>
+					<p class="contactId">Skype:<span>username@skype.com</span></p>
+					<p class="contactId">Phone:<span>+0718-111-0011</span></p>
+				</div>
+			</div>
 		</main>
 			
 		<!-- /MAIN SECTION -->
