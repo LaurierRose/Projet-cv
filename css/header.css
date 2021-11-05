@@ -1,8 +1,15 @@
 *{
     box-sizing: border-box;
 }
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
 
-/*  */
 header{
 
     background-color: #f4f6f8;
@@ -27,8 +34,8 @@ header{
 
 .rightContent{
     width: 47%;
-padding-top: 50px;
-
+    padding-top: 50px;
+    
 }
 .headerHello{
     text-transform: uppercase;
@@ -36,9 +43,11 @@ padding-top: 50px;
     font-weight: 200;
 }
 header h1{
+    position: relative;
     font-size: 40px;
     font-weight: 900;
     margin-top: 5px;
+    
 }
 .rightContent h2{
     font-size: 20px;
@@ -46,13 +55,13 @@ header h1{
 }
 
 .yellowStroke{
-    height: 70px;
-    background: url("/images/jaune.svg") no-repeat right bottom;
-    background-size: 110px;
-    margin-bottom: 15px;
-    display: block;
-    width: fit-content;
-    padding-right: 20px;
+    position: absolute;
+    bottom: -12px;
+    right: -10px;
+    top: 1.2em;
+    left: 8em;
+    width: 3em;
+
 }
 
 .headerIcons{
@@ -77,4 +86,43 @@ header h1{
         text-decoration:none;
         border: none;
         box-shadow: 1px 1px 5px rgb(187, 187, 187);
+}
+/* Au delà de 992px le style ci-dessous s'applique */
+@media only screen and (max-width:992px) {
+    
+    header h1{
+        font-size: 24px;
+    }
+    .headerContainer{
+        max-width: 700px;
+    }
+ 
+ }
+/* Mobile first */
+@media only screen and (max-width:576px) { 
+
+    .headerContainer{
+        display: flex;
+        width: 77%;
+        max-width: 1000px;
+        margin: auto;
+        justify-content: space-evenly;
+        
+    }
+    
+    .headerGraphicPic{
+        display: none;
+    }
+    
+    .rightContent{
+        width: 100%;
+
+    }
+    header h1{
+        font-size: 30px;
+        font-weight: 900;
+        margin-top: 5px;
+    }
+	
+
 }

@@ -93,12 +93,11 @@ a{
     font-weight: 200;
     text-align: center;
     padding: 5px 0;
-    transition: font-weight 0.3s ease-in-out;
+    transition: border-bottom 0.3s ease-in-out;
     margin-left: 0;
 }
 
 #navigation a:hover{
-    font-weight: 800;
     border-bottom: none;
 }
 
