@@ -79,6 +79,7 @@ a{
     text-align: center;
     transition: all 0.4s ease-in-out;
     transform: translateX(110%);
+    z-index: 99;
 }
 
 #navigation .menu .active-link{
@@ -99,6 +100,7 @@ a{
 
 #navigation a:hover{
     border-bottom: none;
+    font-weight: 800;
 }
 
 #navigation .logo{
@@ -122,6 +124,7 @@ a{
     font-size: 30px;
     width: 40px;
     height: 40px;
+    z-index: 99;
 }
 
 #navigation label{
@@ -141,6 +144,7 @@ a{
     opacity: 0;
     transition: all 0.2s ease-in;
     transition-delay: 150ms;
+    z-index: 101;
 }
 
 #toggle:checked + .menu {
@@ -150,8 +154,6 @@ a{
 #toggle:checked ~ .close {
     opacity: 1;
 }
-
-
 
 /* Au delà de 576px le style ci-dessous s'applique : Bien pour le mobile first*/
 @media only screen and (min-width:576px) { 
@@ -170,13 +172,14 @@ a{
         text-align: right;
     }
 
-    .container{
-        max-width: 600px;
+    #navigation .container{
+        max-width: 800px;
         margin: auto;
         padding: 0;
     }
     #navigation .menu a:hover{
-        border-bottom: solid 3px;
+        border-bottom: solid 3px var(--yellow);
+        font-weight: 200;
     }
 
     #navigation .menu-toggle {
@@ -207,7 +210,7 @@ a{
 /* Au delà de 992px le style ci-dessous s'applique */
 @media only screen and (min-width:992px) {
     .container{
-        max-width: 900px;
+        max-width: 1000px;
     }
 
     #navigation ul li{

@@ -1,0 +1,13 @@
+.headerButton:hover{
+    animation: pop 0.3s linear 1;
+}
+
+/* ************************** Definition of the animations **************************** */
+
+@keyframes push{
+    50%  {transform: scale(0.8);}
+  }
+
+@keyframes pop{
+    50%  {transform: scale(1.2);}
+  }

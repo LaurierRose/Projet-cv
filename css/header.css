@@ -11,9 +11,15 @@ body{
 }
 
 header{
-
     background-color: #f4f6f8;
+    padding-bottom: 5%;
 }
+
+.waveBg{
+    height: 150px;
+    width: 100%;
+}
+
 .headerContainer{
     display: flex;
     justify-content: space-between;
@@ -90,8 +96,6 @@ header h1{
 }
 
 .headerButton:hover{
-    background-color: #000000;
-    color: var(--yellow);
     animation: pop 0.3s linear 1;
 }
 
@@ -99,7 +103,7 @@ header h1{
     50%  {transform: scale(1.2);}
   }
 
-/* Au delà de 992px le style ci-dessous s'applique */
+/* en dessous de 992px le style ci-dessous s'applique */
 @media only screen and (max-width:992px) {
     
     header h1{
@@ -107,6 +111,10 @@ header h1{
     }
     .headerContainer{
         max-width: 700px;
+    }
+
+    .waveBg{
+        height: 100px;
     }
  
  }
@@ -134,6 +142,10 @@ header h1{
         font-size: 30px;
         font-weight: 900;
         margin-top: 5px;
+    }
+
+    .waveBg{
+        height: 50px;
     }
 	
 

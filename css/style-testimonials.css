@@ -1,0 +1,92 @@
+
+.main-head {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    margin-bottom: 15%;
+}
+
+.container  {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.postsContainer {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #ffff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between; 
+    flex-wrap: wrap
+  }
+
+.yellow-highlight {
+    height: 35px;
+    background : url("../images/jaune.svg") no-repeat center bottom;
+    background-size: 90px;
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+h4{
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 100px;
+}
+
+ .Alexanderpics , .Aiyanapics , .Braidenrpics , .Ariyarpics {
+     border-radius: 17px;
+ }
+
+ .card {
+     width: 100%;
+ }
+
+ .quote  {
+    padding-top: 5px;
+    background : url("../images/quote.svg") no-repeat;
+    background-size: 40px;
+    margin-bottom: 15px;
+}
+
+.client-presentation {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+.bio{
+    margin: 10px;
+    text-align: right;
+    margin-top:55px;
+}
+.bio p {
+    margin: 0;
+}
+
+#blockquote_quote {
+    margin-right: 0px;
+}
+
+.pMetier {
+    text-align: left;
+}
+
+.client-name {
+    font-weight: 650;
+}
+
+
+/* Mobile first */
+@media only screen and (min-width:576px) { 
+    .card {
+        width: 47%;
+    }
+    
+}
