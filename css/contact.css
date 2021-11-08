@@ -38,12 +38,25 @@
     border-radius: 6px;
     border:solid 1px #e7e8e9;
     padding-left: 10px;
+    
+}
+input:focus{
+    outline: none !important;
+    border-color: #F6e05e;
 }
 .contactForm textarea{
     width: 100%;
     border: solid 1px #e7e8e9;
     border-radius: 6px;
     padding-left: 10px;
+}
+textarea:focus{
+    outline: none !important;
+    border-color: #F6e05e;
+}
+
+::placeholder{
+    opacity: 0;
 }
 
 .contactSendButton{
@@ -92,10 +105,6 @@
 /* Mobile first */
 @media only screen and (max-width:576px) { 
 
-    .contactTitleStroke h1{
-        
-    }
-
     .contactContainer{
         flex-direction: column;
         align-items: center;
@@ -103,8 +112,20 @@
     }
     .contactForm{
         width: 80%;
-        margin-top: 20px;
+        
     }
+    .formEntries{
+        margin: 0px;
+        padding: 15px;
+    }
+    .contactForm label{
+        display: none;
+    }
+    ::placeholder{
+        opacity: 1;
+        padding-top: 3px;
+    }
+    
     .contactRightContent{
         width: 80%;
         margin-top: 20px;

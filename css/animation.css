@@ -25,13 +25,25 @@ main {
     animation-fill-mode: backwards;
 }
 
+
+.linear-wipe {
+    background: linear-gradient(45deg, #000 40%, var(--yellow) 50%, #000 70%);
+    background-size: 170% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 15s ease-in-out infinite reverse;
+    animation-fill-mode: both;
+}
+
 /* ************************** Definition of the animations **************************** */
 
 @keyframes push{
     50%  {
         transform: scale(0.8);
     }
-  }
+}
 
 @keyframes pop{
     50%  {
@@ -39,7 +51,7 @@ main {
     }
   }
 
-  @keyframes fade-pop{
+@keyframes fade-pop{
     0%{
         opacity: 0;
     }
@@ -52,8 +64,7 @@ main {
     100%{
         opacity: 100;
     }
-
-  }
+}
 
   @keyframes left-right{
     50%  {
@@ -61,7 +72,7 @@ main {
     }
   }
 
-  @keyframes up-down{
+@keyframes up-down{
     0%{
         transform: translateY(-110%);
     }
@@ -75,4 +86,10 @@ main {
         text-replace: translateY(0);
     }
 
-  }
+}
+
+@keyframes shine {
+    10%, 100% {
+      background-position: 200% center;
+    }
+}
