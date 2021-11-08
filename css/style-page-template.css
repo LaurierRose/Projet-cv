@@ -1,0 +1,453 @@
+/* *********************** CSS for global site **************************** */
+
+:root{
+    --grey: #f4f6f8;
+    --yellow: #f6e05e;
+    box-sizing: border-box;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: #000;
+    width: 100%;
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    min-width: 410px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+h4{
+    font-size: 18px;
+    margin: 0.3em 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* ******************* CSS for navigation bar ************************/
+
+.max-width{
+    width: 100%;
+    background-color: var(--grey);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+#navigation .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+#navigation ul{
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    padding-left: 0;
+    position: relative;
+}
+
+#navigation ul li{
+    display: block;
+    align-items: flex-end;
+    width: 100%;
+    height: 8%;
+    padding-top: 10px;
+}
+
+#navigation .menu{
+    position: fixed;
+    right: 0;
+    top: 0;
+    font-size: 35px;
+    height: 100vh;
+    width:100%;
+    background-color: var(--yellow);
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    transform: translateX(110%);
+    z-index: 99;
+}
+
+#navigation .menu .active-link{
+    font-weight: 800;
+}
+
+#navigation .menu .active-link:hover{
+    border-bottom: none;
+    font-weight: 800;
+}
+
+#navigation a{
+    font-weight: 200;
+    text-align: center;
+    padding: 5px 0;
+    transition: border-bottom 0.3s ease-in-out;
+    margin-left: 0;
+}
+
+#navigation a:hover{
+    border-bottom: none;
+    font-weight: 800;
+}
+
+#navigation .logo{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#navigation .logo a{
+    font-size: 18px;
+    font-weight: 800;
+    text-align: left;
+}
+
+#navigation .logo a:hover{
+    border-bottom: none;
+}
+
+.menu-toggle {
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    z-index: 99;
+}
+
+#navigation label{
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+#toggle{
+    display: none;
+    width: 30px;
+    height: 30px; 
+}
+
+#navigation .close{
+    opacity: 0;
+    transition: all 0.2s ease-in;
+    transition-delay: 150ms;
+    z-index: 101;
+}
+
+#toggle:checked + .menu {
+    transform: translateX(0);
+}
+
+#toggle:checked ~ .close {
+    opacity: 1;
+}
+
+/* Au delà de 576px le style ci-dessous s'applique : Bien pour le mobile first*/
+@media only screen and (min-width:576px) { 
+	#navigation ul{
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    #navigation ul li{
+       width: auto;
+       height: 25px;
+    }
+
+    #navigation .menu a{
+        margin-left: 30px;
+        text-align: right;
+    }
+
+    #navigation .container{
+        max-width: 800px;
+        margin: auto;
+        padding: 0;
+    }
+    #navigation .menu a:hover{
+        border-bottom: solid 3px var(--yellow);
+        font-weight: 200;
+    }
+
+    #navigation .menu-toggle {
+        display: none;
+    }
+
+    #navigation .menu{
+        position: static;
+        font-size: 16px;
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+        background-color: var(--grey);
+        height: fit-content;
+        transform: translateX(0);
+    }
+
+    #navigation label{
+        display: none;
+    }
+
+    #navigation .logo{
+        width: 20%;
+    }
+
+}
+
+/* Au delà de 992px le style ci-dessous s'applique */
+@media only screen and (min-width:992px) {
+    .container{
+        max-width: 1000px;
+    }
+
+    #navigation ul li{
+        width: auto;
+        height: auto;
+     }
+   
+
+}
+
+/* ******************* CSS for header ************************/
+
+#header{
+    background-color: #f4f6f8;
+    padding-bottom: 5%;
+}
+
+#header .waveBg{
+    height: 150px;
+    width: 100%;
+}
+
+#header .headerContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    
+}
+#header .headerGraphicPic{
+    width: 49%;
+    
+    
+}
+#header .headerGraphicPic img{
+    width: 100%;
+    padding: 20px;
+}
+
+#header .rightContent{
+    width: 47%;
+    padding-top: 50px;
+    
+}
+#header .headerHello{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 200;
+}
+#header h1{
+    position: relative;
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 5px;
+    
+}
+#header .rightContent h2{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#header .yellowStroke{
+    position: absolute;
+    bottom: -12px;
+    right: -10px;
+    top: 1.2em;
+    left: 8em;
+    width: 3em;
+
+}
+
+#header .headerIcons{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#header .headerIcons i{
+    padding-left: 10px;
+}
+#header .headerIcons a{
+    color: rgb(0, 0, 0);
+}
+
+#header .headerButton{
+    background-color:#F6e05e;
+    border-radius:24px;
+    display:inline-block;
+    cursor:pointer;
+    color:#000000;
+    font-size:15px;
+    padding:13px 33px;
+    text-decoration:none;
+    border: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+#header .headerButton:hover{
+    animation: pop 0.3s linear 1;
+}
+
+@keyframes pop{
+    50%  {transform: scale(1.2);}
+  }
+
+/* en dessous de 992px le style ci-dessous s'applique */
+@media only screen and (max-width:992px) {
+    
+    #header h1{
+        font-size: 24px;
+    }
+    #header .headerContainer{
+        max-width: 700px;
+    }
+
+    #header .waveBg{
+        height: 100px;
+    }
+ 
+ }
+/* Mobile first */
+@media only screen and (max-width:576px) { 
+
+    #header .headerContainer{
+        display: flex;
+        width: 77%;
+        max-width: 1000px;
+        margin: auto;
+        justify-content: space-evenly;
+        
+    }
+    
+    #header .headerGraphicPic{
+        display: none;
+    }
+    
+    #header .rightContent{
+        width: 100%;
+
+    }
+    #header h1{
+        font-size: 30px;
+        font-weight: 900;
+        margin-top: 5px;
+    }
+
+    #header .waveBg{
+        height: 50px;
+    }
+	
+
+}
+
+
+/* ******************* CSS for footer page ************************/
+
+
+#footer {
+    background-color: #F4F6F8;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#footer .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    /*margin: 100px;*/
+}
+
+#footer .footer-content h5 {
+    padding-top: 1em;
+    margin-top:35px;
+    font-size: 14px;
+}
+
+#footer .footer-content p {
+    font-size: 10px;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+}
+
+#footer .social-media {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    margin: 0px;
+}
+
+#footer .social-media li {
+    margin: 10px;
+}
+
+#footer .social-media a {
+    color:#000000;
+}
+
+#footer .social-media a i {
+    font-size: 25px;
+    margin-bottom: 1rem;
+}
+
+#footer .footer_bottom {
+    text-align: center;
+    font-size: 8px;
+}
+
+#footer .footer_bottom p {
+    margin-top: 2rem;
+}
+
+#footer .footer_bottom p:last-child {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+#footer .footer_bottom p, a {
+    /*margin:0.5em;*/
+    margin: 10px 0;
+}
+
+#footer .footer_bottom a {
+    text-decoration: none;
+    color:#000000;
+    font-weight: bold;
+}
+
+/* Au delà de 575px le style ci-dessous s'applique */
+@media only screen and (min-width:575px) {
+    #footer .social-media a i {
+        font-size: 16px;
+        margin-bottom: 1rem;
+    }
+   
+
+}

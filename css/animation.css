@@ -1,4 +1,4 @@
-.headerButton:hover{
+#header .headerButton:hover{
     background-color: #000000;
     color: var(--yellow);
     animation: pop 0.3s linear 1;

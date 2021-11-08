@@ -19,6 +19,7 @@
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    margin-bottom: 30px;
     width: 100%;
 }
 .contactForm{
@@ -26,9 +27,7 @@
     width: 30%;
     padding: 20px;   
 }
-.contactForm label{
 
-}
 .formEntries{
     margin: 11px 0px;
     padding: 4px;
