@@ -123,7 +123,7 @@ a{
 }
 
 .menu-toggle {
-    font-size: 30px;
+    font-size: 35px;
     width: 40px;
     height: 40px;
     z-index: 99;
@@ -140,6 +140,13 @@ a{
     display: none;
     width: 30px;
     height: 30px; 
+}
+
+#navigation .open{
+    border-radius: 5px;
+    background-color: var(--yellow);
+    margin: 5px;
+    text-align: center;
 }
 
 #navigation .close{
@@ -159,7 +166,11 @@ a{
 
 /* Au delà de 576px le style ci-dessous s'applique : Bien pour le mobile first*/
 @media only screen and (min-width:576px) { 
-	#navigation ul{
+    #navigation {
+        padding: 0 3%;
+    }
+    
+    #navigation ul{
         flex-direction: row;
         align-items: flex-end;
     }
@@ -211,6 +222,7 @@ a{
 
 /* Au delà de 992px le style ci-dessous s'applique */
 @media only screen and (min-width:992px) {
+    
     .container{
         max-width: 1000px;
     }
@@ -227,12 +239,15 @@ a{
 
 #header{
     background-color: #f4f6f8;
-    padding-bottom: 5%;
 }
 
 #header .waveBg{
     height: 150px;
     width: 100%;
+}
+
+#header .wave{
+    background-color: #fff;
 }
 
 #header .headerContainer{
@@ -256,7 +271,6 @@ a{
 #header .rightContent{
     width: 47%;
     padding-top: 50px;
-    
 }
 #header .headerHello{
     text-transform: uppercase;
@@ -331,6 +345,16 @@ a{
     #header .waveBg{
         height: 100px;
     }
+
+    #header .rightContent{
+        padding-bottom: 2%;
+        
+    }
+
+    #header i.fab{
+        font-size: 25px;
+        margin-right: 1%;
+    }
  
  }
 /* Mobile first */
@@ -351,7 +375,7 @@ a{
     
     #header .rightContent{
         width: 100%;
-
+        
     }
     #header h1{
         font-size: 30px;
@@ -363,7 +387,6 @@ a{
         height: 50px;
     }
 	
-
 }
 
 

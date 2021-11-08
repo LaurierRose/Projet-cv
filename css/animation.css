@@ -1,4 +1,4 @@
-#header .headerButton:hover{
+#header .headerButton:hover, .contactSendButton:hover{
     background-color: #000000;
     color: var(--yellow);
     animation: pop 0.3s linear 1;
@@ -6,6 +6,23 @@
 
 i.fab:hover {
     animation: pop 0.3s linear 1;
+}
+
+
+#header .headerButton:hover .fa-arrow-right{
+    animation: left-right 0.7s ease-in-out infinite;
+}
+
+#header, #navigation{
+    animation: up-down 0.5s ease-in-out ;
+    animation-delay: 50ms;
+    animation-fill-mode: backwards;
+}
+
+main {
+    animation: fade-pop 0.3s ease-in-out ;
+    animation-delay: 600ms;
+    animation-fill-mode: backwards;
 }
 
 /* ************************** Definition of the animations **************************** */
@@ -20,4 +37,42 @@ i.fab:hover {
     50%  {
         transform: scale(1.2);
     }
+  }
+
+  @keyframes fade-pop{
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        transform: scale(1);
+        transform: scale(1.05);
+    }
+
+    100%{
+        opacity: 100;
+    }
+
+  }
+
+  @keyframes left-right{
+    50%  {
+        transform: translateX(8px);
+    }
+  }
+
+  @keyframes up-down{
+    0%{
+        transform: translateY(-110%);
+    }
+
+    50%{
+        transform: translateY(5%);
+
+    }
+
+    100%{
+        text-replace: translateY(0);
+    }
+
   }

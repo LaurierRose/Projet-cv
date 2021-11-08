@@ -8,9 +8,7 @@
 }
 
 .container  {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
+    margin: 0 5%;
 }
 
 .postsContainer {
@@ -88,4 +86,19 @@ h4{
     .card {
         width: 47%;
     } 
+    .container {
+        max-width: 500px;
+        margin: auto;
+    }
+   
+}
+
+/* Au delà de 992px le style ci-dessous s'applique */
+@media only screen and (min-width:992px) {
+    .card {
+        width: 47%;
+    } 
+    .container {
+        max-width: 800px;
+    }
 }
