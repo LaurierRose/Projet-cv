@@ -45,6 +45,11 @@ a{
     margin-bottom: 0;
 }
 
+#navigation{
+    position: fixed;
+    top:0;
+    z-index: 10;
+}
 
 #navigation .container{
     display: flex;
@@ -145,8 +150,9 @@ a{
 #navigation .open{
     border-radius: 5px;
     background-color: var(--yellow);
-    margin: 5px;
+    margin: 1%;
     text-align: center;
+    line-height: 35px;
 }
 
 #navigation .close{
@@ -238,6 +244,7 @@ a{
 /* ******************* CSS for header ************************/
 
 #header{
+    padding-top: 40px;
     background-color: #f4f6f8;
 }
 
@@ -279,6 +286,7 @@ a{
 }
 #header h1{
     position: relative;
+    z-index: 0;
     font-size: 40px;
     font-weight: 900;
     margin-top: 5px;
@@ -471,6 +479,4 @@ a{
         font-size: 16px;
         margin-bottom: 1rem;
     }
-   
-
 }

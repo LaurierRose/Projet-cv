@@ -110,6 +110,7 @@ h3{
     border-radius: 17px;
     margin: 4%;
     transition: all 0.5s ease-in-out;
+    overflow: hidden;
 }
 
 #experience .card:hover{
@@ -123,13 +124,29 @@ h3{
     background-color: var(--yellow);
 }
 
+#experience .card p{
+    padding: 0;
+    margin: 0;
+    height: 0;
+    transition: all 0.3s ease-in-out;
+    font-size: 0;
+}
+
+#experience .card:hover p{
+    height: auto;
+    padding: 0 15px;
+    margin: 15px 0;
+    font-size: 1em;
+}
+
+
 #experience .top-band{
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     background-color: var(--grey);
     border-radius: 15px 15px 0 0;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 #experience .top-band small{
@@ -139,10 +156,6 @@ h3{
 #experience .top-band img{
     width: 50px;
     align-self: flex-end;
-}
-
-#experience .card p{
-    padding: 0 15px;
 }
 
 

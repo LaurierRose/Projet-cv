@@ -16,7 +16,7 @@ i.fab:hover {
 #header, #navigation{
     animation: up-down 0.5s ease-in-out ;
     animation-delay: 50ms;
-    animation-fill-mode: backwards;
+    /* animation-fill-mode: backwards; */
 }
 
 main {
@@ -35,6 +35,12 @@ main {
     -webkit-text-fill-color: transparent;
     animation: shine 15s ease-in-out infinite reverse;
     animation-fill-mode: both;
+}
+
+#navigation .open {
+    animation: pop 0.5s linear;
+    animation-delay: 600ms;
+    animation-fill-mode: backwards;
 }
 
 /* ************************** Definition of the animations **************************** */
